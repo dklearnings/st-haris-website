@@ -1,6 +1,6 @@
 {
-  "name": "stharis_website",
-  "homepage": "https://github.com/dklearnings/st-haris-website",
+  "homepage": "https://dklearnings.github.io/st-haris-website",
+  "name": "stharis_website",  
   "version": "0.1.0",
   "private": true,
   "dependencies": {

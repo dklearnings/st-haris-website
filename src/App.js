@@ -16,6 +16,7 @@ import College from './pages/College'
 import Enquiry from './pages/Enquiry'
 import Instruction from './pages/Instruction'
 import Trustee from './pages/Trustee'
+import Notices from './pages/Notices'
 
 function App() {
   return (    
@@ -33,6 +34,7 @@ function App() {
     <Route path='/enquiry' element={<Enquiry/>}></Route>
     <Route path='/instruction' element={<Instruction/>}></Route>
     <Route path='/trustee' element={<Trustee/>}></Route>
+    <Route path='/notices' element={<Notices/>}></Route>
 
     </Routes>    
     <Footer/>

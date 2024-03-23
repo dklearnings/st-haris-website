@@ -7,8 +7,8 @@ function ViewCount() {
         const storedCount = localStorage.getItem("pageVisits");
         const initialCount = Number(storedCount)||0;
         nf.format(initialCount);
-        setCount(initialCount+1);
-        localStorage.setItem("pageVisits",initialCount+1);
+        setCount(initialCount+0.5);
+        localStorage.setItem("pageVisits",initialCount+0.5);
 
     },[]); 
   return (
