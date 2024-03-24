@@ -20,7 +20,7 @@ import Notices from './pages/Notices'
 
 function App() {
   return (    
-    <HashRouter basename='/dklearnings'>
+    <HashRouter>
     <Header/><Navbar/>
     {/*<Carousal/>
     <Facts/>*/}
