@@ -16,15 +16,15 @@ function Navbar() {
             <div className="nav-item dropdown">
               <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">About Us</a>
               <div className="dropdown-menu bg-light m-0">
-                <a href="/trustee" className="dropdown-item">Managing Trustee</a>
-                <a href="appointment.html" className="dropdown-item">Our Belief</a>
-                <a href="team.html" className="dropdown-item">Aims and Ideals</a>
-                <a href="testimonial.html" className="dropdown-item">Our Vision</a>
-                <a href="testimonial.html" className="dropdown-item">Our Mission</a>
-                <a href="testimonial.html" className="dropdown-item">Goals</a>
-                <a href="testimonial.html" className="dropdown-item">Objectives</a>
-                <a href="testimonial.html" className="dropdown-item">Our Motto</a>
-                <a href="404.html" className="dropdown-item">404 Page</a>
+                <a href="/st-haris-website/trustee" className="dropdown-item">Managing Trustee</a>
+                <a href="/belief" className="dropdown-item">Our Belief</a>
+                <a href="/aimsandideals" className="dropdown-item">Aims and Ideals</a>
+                <a href="/vision" className="dropdown-item">Our Vision</a>
+                <a href="/mission" className="dropdown-item">Our Mission</a>
+                <a href="/goals" className="dropdown-item">Goals</a>
+                <a href="/objectives" className="dropdown-item">Objectives</a>
+                <a href="/motto" className="dropdown-item">Our Motto</a>
+                {/* <a href="404.html" className="dropdown-item">404 Page</a> */}
               </div>
             </div>
             <a href="/school" className="nav-item nav-link">School</a>
@@ -33,13 +33,13 @@ function Navbar() {
               <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Instructions</a>
               <div className="dropdown-menu bg-light m-0">
                 <a href="/instruction" className="dropdown-item">General Instructions</a>
-                <a href="appointment.html" className="dropdown-item">Rule and Regulations</a>
-                <a href="team.html" className="dropdown-item">Examinations</a>
-                <a href="testimonial.html" className="dropdown-item">Co-Curricular Activities</a>
-                <a href="testimonial.html" className="dropdown-item">Houses</a>
-                <a href="testimonial.html" className="dropdown-item">Uniforms</a>
-                <a href="testimonial.html" className="dropdown-item">ID Cards</a>
-                <a href="testimonial.html" className="dropdown-item">Bus Services</a>                
+                <a href="/ruleandregulations" className="dropdown-item">Rule and Regulations</a>
+                <a href="/examination" className="dropdown-item">Examinations</a>
+                <a href="/cocurricularactivities" className="dropdown-item">Co-Curricular Activities</a>
+                <a href="/houses" className="dropdown-item">Houses</a>
+                <a href="/uniforms" className="dropdown-item">Uniforms</a>
+                <a href="/idcards" className="dropdown-item">ID Cards</a>
+                <a href="/busservices" className="dropdown-item">Bus Services</a>                
               </div>
             </div>
 
