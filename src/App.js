@@ -3,7 +3,7 @@ import About from './pages/About'
 import Home from './pages/Home'
 import Contact from './pages/Contact'
 //import Header from './components/Header'
-import { BrowserRouter , Routes, Route } from 'react-router-dom'
+import { HashRouter , Routes, Route } from 'react-router-dom'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import Navbar from './components/Navbar'
@@ -35,7 +35,7 @@ import BusServices from './pages/BusServices'
 
 function App() {
   return (    
-    <BrowserRouter>
+    <HashRouter>
     <Header/><Navbar/>
     {/*<Carousal/>
     <Facts/>*/}
@@ -69,7 +69,7 @@ function App() {
 
     </Routes>    
     <Footer/>
-    </BrowserRouter> 
+    </HashRouter> 
      
   )
 }
