@@ -3,7 +3,7 @@ import About from './pages/About'
 import Home from './pages/Home'
 import Contact from './pages/Contact'
 //import Header from './components/Header'
-import { HashRouter , Routes, Route } from 'react-router-dom'
+import { BrowserRouter , Routes, Route } from 'react-router-dom'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import Navbar from './components/Navbar'
@@ -32,10 +32,11 @@ import Houses from './pages/Houses'
 import Uniforms from './pages/Uniforms'
 import IdCards from './pages/IdCards'
 import BusServices from './pages/BusServices'
+import Links from './pages/Links'
 
 function App() {
   return (    
-    <HashRouter>
+    <BrowserRouter>
     <Header/><Navbar/>
     {/*<Carousal/>
     <Facts/>*/}
@@ -50,6 +51,7 @@ function App() {
     <Route path='/instruction' element={<Instruction/>}></Route>
     <Route path='/trustee' element={<Trustee/>}></Route>
     <Route path='/notices' element={<Notices/>}></Route>
+    <Route path='/links' element={<Links/>}></Route>
 
     <Route path='/ruleandregulations' element={<RuleAndRegulations/>}></Route>
     <Route path='/examination' element={<Examination/>}></Route>
@@ -69,7 +71,7 @@ function App() {
 
     </Routes>    
     <Footer/>
-    </HashRouter> 
+    </BrowserRouter> 
      
   )
 }

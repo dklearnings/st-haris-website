@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 function Header() {
   return (
    
@@ -16,7 +17,7 @@ function Header() {
               </div>  
               <div className="h-100 d-inline-flex align-items-center me-2">
                 <small className="far fa-envelope text-primary me-2" />
-                <small>info@st-haris.org</small>
+                <small>stharis@gmail.com</small>
               </div>  
               {/* <div className="h-100 d-inline-flex align-items-center">
                 <small className="fa fa-map text-primary me-2" />
@@ -29,10 +30,10 @@ function Header() {
                 <small>+022-28105376 / 8879016151</small>
               </div>
               <div className="h-100 d-inline-flex align-items-center mx-n2">
-                <a className="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href><i className="fab fa-facebook-f" /></a>
-                <a className="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href><i className="fab fa-telegram" /></a>
-                <a className="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href><i className="fab fa-youtube" /></a>
-                <a className="btn btn-square btn-link rounded-0" href><i className="fab fa-instagram" /></a>
+                <a target="_blank" className="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href="https://www.facebook.com/profile.php?id=100085786775850"><i className="fab fa-facebook-f" /></a>
+                <a target="_blank" className="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href><i className="fab fa-telegram" /></a>
+                <a target="_blank" className="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href="https://www.youtube.com/user/stharishighschool"><i className="fab fa-youtube" /></a>
+                <a target="_blank" className="btn btn-square btn-link rounded-0" href="https://www.instagram.com/stharishighschool/"><i className="fab fa-instagram" /></a>
               </div>
             </div>
           </div>
@@ -44,6 +45,7 @@ function Header() {
                 <h2>St. Haris High School & Hajra Girls Jr. College</h2>
               </div>
               </div>
+              
               </div>
               </div>
         </div>

@@ -3,6 +3,7 @@ import { useState,useEffect } from 'react';
 import ViewCount from './ViewCount';
 
 
+
 function Thoughts() {
     const [thoughts, setThoughts] = useState("");
     const [msg, setMsg] = useState("");
@@ -37,35 +38,41 @@ function Thoughts() {
 
   return (
     
-    <div className="container-fluid bg-dark text-light p-0">
+  <div className="container-fluid bg-dark text-light p-0">
    <div className="row">
-    <div className="col">
+      <div className="col">
      {/* start */}
-     <div className="align-items-center me-4 mh-10
-     " >
-                <small className="fa fa-book text-primary me-2" />
+     <div className="align-items-center" style={{"height":'10%', "width": "30%"}}>
+                <small className="fa fa-book text-primary" />
                 <small className="fa text-primary me-2">Thought of the day</small>
-                <small>{thoughts && (
-        <marquee behavior="scroll" direction="left" scrollamount="5">
+      </div> 
+      {/* end */}
+     </div> 
+     <div className="col">
+     {/* start */}
+     <div className="align-items-left me-2 mh-8" style={{"height":'10%', "width": "90%"}}>
+                <small className="align-items-center">
+                {thoughts && (
+        <marquee behavior="scroll" direction="left" scrollamount="8">
           {thoughts.Msg}
         </marquee>)}</small>
-        </div>
-        {/*end*/}
-    </div>   
-    <div className="col align-right">
+     
+      </div> 
+      </div>
+      {/* end */}
+      <div className="col">
+      <div className="align-right" style={{"height":'10%', "width": "30%"}}>
     {/* start */}
-      <div className="me-4 mh-100" >
+      <div className="me-2 mh-10" >
                 <small className="fa fa-eye text-primary me-2" />
-        <small><ViewCount /></small>
-              
+        <small><ViewCount /> views</small>              
         </div>
         {/*end*/}
-    </div>       
-  </div>
-</div>
-
-  
-    
+        </div>
+     
+     </div>     
+    </div>   
+</div>    
   )
 }
 

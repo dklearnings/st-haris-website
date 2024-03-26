@@ -1,0 +1,6 @@
+[{ "id": 1,"title":"Sample Notice 1","year":"2024-2025","publishdate":"2024-01-05", "desc": "file1.txt" },
+ { "id": 2,"title":"Sample Notice 2","year":"2023-2024","publishdate":"2024-01-05", "desc": "forma.pdf" },
+  { "id": 3,"title":"Sample Notice 3","year":"2024-2025","publishdate":"2024-01-05", "desc": "file2.txt" },
+ { "id": 4,"title":"Sample Notice 4","year":"2023-2024","publishdate":"2024-01-05", "desc": "formb.pdf" },     
+{ "id": 5,"title":"Sample Notice 5","year":"2023-2024","publishdate":"2024-01-05", "desc": "form3.pdf" }
+]    

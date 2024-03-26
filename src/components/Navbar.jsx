@@ -16,7 +16,7 @@ function Navbar() {
             <div className="nav-item dropdown">
               <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">About Us</a>
               <div className="dropdown-menu bg-light m-0">
-                <a href="/st-haris-website/trustee" className="dropdown-item">Managing Trustee</a>
+                <a href="/trustee" className="dropdown-item">Managing Trustee</a>
                 <a href="/belief" className="dropdown-item">Our Belief</a>
                 <a href="/aimsandideals" className="dropdown-item">Aims and Ideals</a>
                 <a href="/vision" className="dropdown-item">Our Vision</a>

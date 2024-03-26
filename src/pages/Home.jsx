@@ -1,13 +1,41 @@
 import React from 'react'
+import { useState } from 'react';
 import Carousal from '../components/Carousal'
 import Thoughts from './Thoughts'
 
 
 function Home() {
+  const [notices, setNotices] = useState([]);
+  const [links, setLinks] = useState([]);
+  // Notice List Fetch Function   
+  fetch("./assets/data/notices/notice_list.json").then(
+    function(res){
+    return res.json()
+  }).then(function(notices){
+  // store Filter in State File Variable
+    setNotices(notices)
+  }).catch(
+    function(err){
+      console.log(err, ' error on fetching notices ')
+    }
+  )
+
+  // Notice List Fetch Function   
+  fetch("./assets/data/links/link_list.json").then(
+    function(res){
+    return res.json()
+  }).then(function(links){
+  // store Filter in State File Variable
+    setLinks(links)
+  }).catch(
+    function(err){
+      console.log(err, ' error on fetching links ')
+    }
+  )
+
   return (
     <div><Carousal />
-    <Thoughts />
-
+    <Thoughts />      
 <div className="container">
   <div className="row">
     <div className="col">
@@ -17,16 +45,13 @@ function Home() {
           Notice Board
         </div>
         <div className="list-group">
-  <a href="/notices" className="list-group-item list-group-item-action" >
-    The current button
-  </a>
-  <a href="/notices" className="list-group-item list-group-item-action">A second item</a>
-  <a href="/notices" className="list-group-item list-group-item-action">A third button item</a>
-  <a href="/notices" className="list-group-item list-group-item-action">A fourth button item</a>
-  <a href="/notices" className="list-group-item list-group-item-action">A fifth button item</a>
-  <a href="/notices" className="btn btn-primary">View All</a>
-      </div>
-    </div>  
+         <marquee behavior="scroll" direction="up" scrollamount="2">
+        {notices.map(notice => (        
+  <a href="/notices" className="list-group-item list-group-item-action"> 
+         {notice.title}
+         </a>))}</marquee></div>     
+  <a href="/notices" className="btn btn-primary">View All</a>  
+      </div>     
      {/*Notice Board end */}
     </div>   
     <div className="col">
@@ -70,16 +95,13 @@ function Home() {
           Important Links
         </div>
         <div className="list-group">
-  <button type="button" className="list-group-item list-group-item-action">
-    The current button
-  </button>
-  <button type="button" className="list-group-item list-group-item-action">A second item</button>
-  <button type="button" className="list-group-item list-group-item-action">A third button item</button>
-  <button type="button" className="list-group-item list-group-item-action">A fourth button item</button>
-  <button type="button" className="list-group-item list-group-item-action">A fifth button item</button>
-  <a href="#" className="btn btn-primary">View All</a>
-      </div>       
-      </div>
+         <marquee behavior="scroll" direction="up" scrollamount="2">
+        {links.map(link => (        
+  <a href="/links" className="list-group-item list-group-item-action"> 
+         {link.title}
+         </a>))}</marquee></div>     
+  <a href="/links" className="btn btn-primary">View All</a>  
+      </div>   
      {/*Important Links end */}
     </div>   
     <div className="col">
