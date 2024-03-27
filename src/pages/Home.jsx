@@ -7,6 +7,7 @@ import Thoughts from './Thoughts'
 function Home() {
   const [notices, setNotices] = useState([]);
   const [links, setLinks] = useState([]);
+  const [newsletters, setNewsletters] = useState([]);
   // Notice List Fetch Function   
   fetch("./assets/data/notices/notice_list.json").then(
     function(res){
@@ -20,7 +21,21 @@ function Home() {
     }
   )
 
-  // Notice List Fetch Function   
+  // NewsLetters List Fetch Function   
+  fetch("./assets/data/newsletters/newsletter_list.json").then(
+    function(res){
+    return res.json()
+  }).then(function(newsletters){
+  // store newsletters in State File Variable
+    setNewsletters(newsletters)
+  }).catch(
+    function(err){
+      console.log(err, ' error on fetching newsletters ')
+    }
+  )
+
+  
+  //links List Fetch Function   
   fetch("./assets/data/links/link_list.json").then(
     function(res){
     return res.json()
@@ -130,19 +145,17 @@ function Home() {
           News Letter
         </div>
         <div className="list-group">
-  <button type="button" className="list-group-item list-group-item-action">
-    The current button
-  </button>
-  <button type="button" className="list-group-item list-group-item-action">A second item</button>
-  <button type="button" className="list-group-item list-group-item-action">A third button item</button>
-  <button type="button" className="list-group-item list-group-item-action">A fourth button item</button>
-  <button type="button" className="list-group-item list-group-item-action">A fifth button item</button>
-<a href="/notices" className="btn btn-primary">View All</a>
+         <marquee behavior="scroll" direction="up" scrollamount="2">
+        {newsletters.map(newsletter => (        
+  <a href="/newsletters" className="list-group-item list-group-item-action"> 
+         {newsletter.title}
+         </a>))}</marquee></div>     
+         <a href="/newsletters" className="btn btn-primary">View All</a>
       </div>
       </div>
        {/*Newsletter end */}
     </div>    
-  </div>
+  
 
  
 </div>

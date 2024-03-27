@@ -2,14 +2,10 @@ import React from 'react'
 import About from './pages/About'
 import Home from './pages/Home'
 import Contact from './pages/Contact'
-//import Header from './components/Header'
 import { BrowserRouter , Routes, Route } from 'react-router-dom'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import Navbar from './components/Navbar'
-//import Spinner from './components/Spinner'
-import Carousal from './components/Carousal'
-import Facts from './components/Facts'
 import Downloads from './pages/Downloads'
 import School from './pages/School'
 import College from './pages/College'
@@ -17,6 +13,7 @@ import Enquiry from './pages/Enquiry'
 import Instruction from './pages/Instruction'
 import Trustee from './pages/Trustee'
 import Notices from './pages/Notices'
+import NewsLetters from './pages/NewsLetters'
 
 import Belief from './pages/Belief'
 import AimsAndIdeals from './pages/AimsAndIdeals'
@@ -33,6 +30,7 @@ import Uniforms from './pages/Uniforms'
 import IdCards from './pages/IdCards'
 import BusServices from './pages/BusServices'
 import Links from './pages/Links'
+import Activities from './pages/Activities'
 
 function App() {
   return (    
@@ -52,6 +50,8 @@ function App() {
     <Route path='/trustee' element={<Trustee/>}></Route>
     <Route path='/notices' element={<Notices/>}></Route>
     <Route path='/links' element={<Links/>}></Route>
+    <Route path='/newsletters' element={<NewsLetters/>}></Route>
+    <Route path='/activities' element={<Activities/>}></Route>
 
     <Route path='/ruleandregulations' element={<RuleAndRegulations/>}></Route>
     <Route path='/examination' element={<Examination/>}></Route>
