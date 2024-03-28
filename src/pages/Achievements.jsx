@@ -1,7 +1,7 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel'; 
 
-function Activities() {
+function Achievements() {
   return (
     <div style={{ display: 'block', width: 285,height:244, padding: 0}}> 
      <Carousel> 
@@ -30,4 +30,4 @@ src="https://media.geeksforgeeks.org/wp-content/uploads/20210425122716/1-300x115
   )
 }
 
-export default Activities
+export default Achievements

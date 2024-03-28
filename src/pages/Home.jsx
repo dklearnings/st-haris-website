@@ -1,13 +1,29 @@
 import React from 'react'
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import Carousal from '../components/Carousal'
 import Thoughts from './Thoughts'
+import Activities from './Activities';
+import Achievements from './Achievements';
+//import ViewCount from './ViewCount';
 
 
 function Home() {
   const [notices, setNotices] = useState([]);
   const [links, setLinks] = useState([]);
   const [newsletters, setNewsletters] = useState([]);
+  const [count, setCount]=useState(0);
+
+   useEffect(()=>{
+        //var nf = new Intl.NumberFormat();
+        const storedCount = localStorage.getItem("pageVisits");
+        const initialCount = Number(storedCount)||0;
+        //const initialCount = 0;
+        
+        //nf.format(initialCount);
+        setCount(initialCount+0.5);
+        localStorage.setItem("pageVisits",initialCount+0.5);
+
+    },[]); 
   // Notice List Fetch Function   
   fetch("./assets/data/notices/notice_list.json").then(
     function(res){
@@ -87,16 +103,7 @@ function Home() {
         <div className="btn btn-primary">
           Achievements
         </div>
-        <div className="list-group">
-  <button type="button" className="list-group-item list-group-item-action">
-    The current button
-  </button>
-  <button type="button" className="list-group-item list-group-item-action">A second item</button>
-  <button type="button" className="list-group-item list-group-item-action">A third button item</button>
-  <button type="button" className="list-group-item list-group-item-action">A fourth button item</button>
-  <button type="button" className="list-group-item list-group-item-action">A fifth button item</button>
-<a href="#" className="btn btn-primary">View All</a>
-      </div>
+        <Achievements />
       </div>
       {/*Achievements ends */}
     </div>    
@@ -125,16 +132,7 @@ function Home() {
         <div className="btn btn-primary">
           Activities
         </div>
-        <div className="list-group">
-  <button type="button" className="list-group-item list-group-item-action">
-    The current button
-  </button>
-  <button type="button" className="list-group-item list-group-item-action">A second item</button>
-  <button type="button" className="list-group-item list-group-item-action">A third button item</button>
-  <button type="button" className="list-group-item list-group-item-action">A fourth button item</button>
-  <button type="button" className="list-group-item list-group-item-action">A fifth button item</button>
-<a href="#" className="btn btn-primary">View All</a>
-      </div>
+        <Activities />
       </div>
       {/*Activities end */}
     </div>
@@ -147,9 +145,10 @@ function Home() {
         <div className="list-group">
          <marquee behavior="scroll" direction="up" scrollamount="2">
         {newsletters.map(newsletter => (        
-  <a href="/newsletters" className="list-group-item list-group-item-action"> 
-         {newsletter.title}
-         </a>))}</marquee></div>     
+          <a href="/newsletters" className="list-group-item list-group-item-action"> 
+         {newsletter.title}</a>))}
+         </marquee>
+         </div>     
          <a href="/newsletters" className="btn btn-primary">View All</a>
       </div>
       </div>
@@ -159,7 +158,25 @@ function Home() {
 
  
 </div>
+<div className="container-fluid bg-dark text-light p-0">
+   <div className="row">
+      <div className="col">
+     {/* View Count start */}
+     <div className="d-flex justify-content-center align-items-center">
+    <small className="fa fa-eye text-primary me-2" />&nbsp;
+    {count} views</div>
+     {/* View Count  end */}
+     
+     </div>
+     </div>
+     </div>
+
+
   </div>
+  
+
+
+  
   )
 }
 

@@ -40,37 +40,26 @@ function Thoughts() {
     
   <div className="container-fluid bg-dark text-light p-0">
    <div className="row">
-      <div className="col">
+      <div className="col-2 me-0 w-3">
      {/* start */}
-     <div className="align-items-center" style={{"height":'10%', "width": "30%"}}>
+     
                 <small className="fa fa-book text-primary" />
-                <small className="fa text-primary me-2">Thought of the day</small>
-      </div> 
+                <small className="fa text-primary me-2 w-5">&nbsp;&nbsp;Thought of the day</small>
+      
       {/* end */}
      </div> 
-     <div className="col">
+     <div className="col-10">
      {/* start */}
-     <div className="align-items-left me-2 mh-8" style={{"height":'10%', "width": "90%"}}>
-                <small className="align-items-center">
+     <div className="align-items-left me-0 w-8">
+                <small className="align-items-right">
                 {thoughts && (
         <marquee behavior="scroll" direction="left" scrollamount="8">
           {thoughts.Msg}
-        </marquee>)}</small>
-     
+        </marquee>)}</small>     
       </div> 
       </div>
-      {/* end */}
-      <div className="col">
-      <div className="align-right" style={{"height":'10%', "width": "30%"}}>
-    {/* start */}
-      <div className="me-2 mh-10" >
-                <small className="fa fa-eye text-primary me-2" />
-        <small><ViewCount /> views</small>              
-        </div>
-        {/*end*/}
-        </div>
-     
-     </div>     
+      {/* end */}  
+            
     </div>   
 </div>    
   )
