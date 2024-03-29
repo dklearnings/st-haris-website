@@ -33,24 +33,26 @@ function Header() {
               </div>
             </div>
           </div>
-          <div className="container-fluid bg-white text-black p-0">
+          <div className="container-fluid bg-white p-0">
           <div className="row gx-0 d-none d-lg-flex">
-          <div className="col-lg-2 px-10">         
-      <img src="assets/img/School/logo.png" className="d-block w-60" style={{width:"75px",height:"75px"}} alt="..." />
+          <div className="col-lg-2">    
+          <a href="/" className="navbar-brand d-flex px-4 px-3">
+          <img src="assets/img/School/logo.png" className="d-block" style={{width:"75px"}} alt="..." />
+          </a>          
+          </div>
+          <div className="col-lg-10 px-20 ">      
+               <p className="fa fa-xl text-primary me-20 solid" style={{fontSize:"3.0em"}}>
+                <h4><u>St. Haris High School & Hajra Girls Jr. College</u></h4></p><br/>
+                <p className="fa fa-marker-alt text-primary me-20 solid" style={{fontSize:"1.50em"}}>
+                <p>Success in this world and Akhirah</p></p>
+                
+              
     </div>
-    
-    <div className="col-lg-10 px-0">            
-              <div className="h-100 d-inline-flex me-4">
-                <small className="fa fa-marker-alt text-primary me-20 solid">
-                <h1>St. Haris High School & Hajra Girls Jr. College</h1></small>
+              </div>              
+              <div className="col-lg shadow-lg">&nbsp;
+              </div>              
               </div>
-              
-              
-              </div>
-              </div>
-              </div>
-        </div>
-        
+        </div>        
   )
 }
 

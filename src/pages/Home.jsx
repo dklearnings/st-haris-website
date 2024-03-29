@@ -82,13 +82,11 @@ function Home() {
   fade={true}
   direction={"up"}
   reverse={false}
-  pauseOnHover={true}
-  
+  pauseOnHover={true}  
+  className=""
 >
-        <div className="list-group">
-        
-        {notices.map(notice => (    
-              
+        <div className="list-group">        
+        {notices.map(notice => (                  
   <a href="/notices" className="list-group-item list-group-item-action"> 
   <small className="fa fa-bell text-primary" /> &nbsp;
          {notice.title}
@@ -129,11 +127,17 @@ function Home() {
           Important Links
         </div>
         <div className="list-group">
-         <marquee behavior="scroll" direction="up" scrollamount="2">
+         <Marquee
+  fade={false}
+  direction={"up"}
+  reverse={false}
+  pauseOnHover={true}  
+>
         {links.map(link => (        
   <a href="/links" className="list-group-item list-group-item-action"> 
+  <small className="fa fa-link text-primary" /> &nbsp;
          {link.title}
-         </a>))}</marquee></div>     
+         </a>))}</Marquee></div>     
   <a href="/links" className="btn btn-primary">View All</a>  
       </div>   
      {/*Important Links end */}
@@ -155,11 +159,17 @@ function Home() {
           News Letter
         </div>
         <div className="list-group">
-         <marquee behavior="scroll" direction="up" scrollamount="2">
+         <Marquee
+  fade={false}
+  direction={"up"}
+  reverse={false}
+  pauseOnHover={true}  
+>
         {newsletters.map(newsletter => (        
-          <a href="/newsletters" className="list-group-item list-group-item-action"> 
+          <a href="/newsletters" className="list-group-item list-group-item-action">
+          <small className="fa fa-newspaper text-primary" /> &nbsp; 
          {newsletter.title}</a>))}
-         </marquee>
+         </Marquee>
          </div>     
          <a href="/newsletters" className="btn btn-primary">View All</a>
       </div>

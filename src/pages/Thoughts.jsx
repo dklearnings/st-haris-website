@@ -1,12 +1,12 @@
 import React from 'react'
 import { useState,useEffect } from 'react';
-import ViewCount from './ViewCount';
+//import ViewCount from './ViewCount';
 
 
 
 function Thoughts() {
     const [thoughts, setThoughts] = useState("");
-    const [msg, setMsg] = useState("");
+    //const [msg, setMsg] = useState("");
     //let number = (Math.floor(Math.random() * 5));
     //alert(number);
 

@@ -1,0 +1,5 @@
+[{ "id": 1,"title":"Sample1","year":"2024-2025","publishdate":"2024-01-05", "name": "1.jpg", "url": "assets/img/Carousel/1.jpg" },
+ { "id": 2,"title":"Sample2","year":"2023-2024","publishdate":"2024-01-05", "name": "2.jpg", "url": "assets/img/Carousel/2.jpg" },
+{ "id": 3,"title":"Sample3","year":"2023-2024","publishdate":"2024-01-05", "name": "3.jpg", "url": "assets/img/Carousel/3.jpg" },
+{ "id": 4,"title":"Sample4","year":"2023-2024","publishdate":"2024-01-05", "name": "4.jpg", "url": "assets/img/Carousel/4.jpg" }
+]    
