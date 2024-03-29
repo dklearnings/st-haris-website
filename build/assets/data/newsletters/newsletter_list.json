@@ -1,0 +1,6 @@
+[{ "id": 1,"title":"News Letter 1","year":"2024-2025","publishdate":"2024-01-05", "desc": "Detail1"},
+ { "id": 2,"title":"News Letter 2","year":"2023-2024","publishdate":"2024-01-05", "desc": "Detail2" },
+ { "id": 3,"title":"News Letter 3","year":"2023-2024","publishdate":"2024-01-05", "desc": "Detail3" }, 
+ { "id": 4,"title":"News Letter 4","year":"2023-2024","publishdate":"2024-01-05", "desc": "Detail4" },
+ { "id": 5,"title":"News Letter 5","year":"2023-2024","publishdate":"2024-01-05", "desc": "Detail5" }    
+]    

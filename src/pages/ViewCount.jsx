@@ -3,7 +3,7 @@ import React,{useState,useEffect} from 'react'
 function ViewCount() {
     const [count, setCount]=useState(0);
     useEffect(()=>{
-        var nf = new Intl.NumberFormat();
+        //var nf = new Intl.NumberFormat();
         const storedCount = localStorage.getItem("pageVisits");
         const initialCount = Number(storedCount)||0;
         //const initialCount = 0;

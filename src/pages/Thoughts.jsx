@@ -40,9 +40,9 @@ function Thoughts() {
     
   <div className="container-fluid bg-dark text-light p-0">
    <div className="row">
-      <div className="col-2 me-0 w-3">
+      <div className="col-2 me-0 w-0 text-md-right">
      {/* start */}
-     
+     &nbsp;&nbsp;
                 <small className="fa fa-book text-primary" />
                 <small className="fa text-primary me-2 w-5">&nbsp;&nbsp;Thought of the day</small>
       
@@ -50,7 +50,7 @@ function Thoughts() {
      </div> 
      <div className="col-10">
      {/* start */}
-     <div className="align-items-left me-0 w-8">
+     <div className="align-items-left me-0 w-9">
                 <small className="align-items-right">
                 {thoughts && (
         <marquee behavior="scroll" direction="left" scrollamount="8">

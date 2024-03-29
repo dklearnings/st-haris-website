@@ -1,35 +1,21 @@
 import React from 'react'
+import Carousel from 'react-bootstrap/Carousel';
 
 function Carousal() {
   return (
-    <div>
+    <div className="md-30"> 
     {/* Carousel Start */}
-    <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
-  <div className="carousel-inner">
-    <div className="carousel-item active" data-bs-interval="3000">
-      <img src="./assets/img/Carousel/1.jpg" className="d-block w-60" alt="..." />
-    </div>
-    <div className="carousel-item" data-bs-interval="3000">
-      <img src="assets/img/Carousel/2.jpg" className="d-block w-60" alt="..." />
-    </div>
-    <div className="carousel-item" data-bs-interval="3000">
-      <img src="assets/img/Carousel/3.jpg" className="d-block w-60" alt="..." />
-    </div>
-    <div className="carousel-item" data-bs-interval="3000">
-      <img src="assets/img/Carousel/4.jpg" className="d-block w-60" alt="..." />
-    </div>
-  </div>
-  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Previous</span>
-  </button>
-  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Next</span>
-  </button>
-</div>
-    {/*} Carousel End */}
-    </div>
+      <Carousel data-bs-theme="light">
+      <Carousel.Item interval={1500}>
+        <img
+          className="d-block"
+          src="assets/img/Carousel/1.jpg"
+          alt="First slide"
+        />        
+      </Carousel.Item>
+      </Carousel>
+    {/* Carousel End */}
+   </div>
   )
 }
 

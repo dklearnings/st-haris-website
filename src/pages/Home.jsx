@@ -5,6 +5,9 @@ import Thoughts from './Thoughts'
 import Activities from './Activities';
 import Achievements from './Achievements';
 //import ViewCount from './ViewCount';
+//import Marquee from "react-fast-marquee";
+import { Marquee } from "@devnomic/marquee";
+import "@devnomic/marquee/dist/index.css";
 
 
 function Home() {
@@ -75,12 +78,21 @@ function Home() {
         <div className="btn btn-primary">
           Notice Board
         </div>
+        <Marquee
+  fade={true}
+  direction={"up"}
+  reverse={false}
+  pauseOnHover={true}
+  
+>
         <div className="list-group">
-         <marquee behavior="scroll" direction="up" scrollamount="2">
-        {notices.map(notice => (        
+        
+        {notices.map(notice => (    
+              
   <a href="/notices" className="list-group-item list-group-item-action"> 
+  <small className="fa fa-bell text-primary" /> &nbsp;
          {notice.title}
-         </a>))}</marquee></div>     
+         </a>))}</div> </Marquee>
   <a href="/notices" className="btn btn-primary">View All</a>  
       </div>     
      {/*Notice Board end */}
