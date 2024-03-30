@@ -3,7 +3,7 @@ import React from 'react'
 
 function Header() {
   return (
-   
+      <div>
         <div className="container-fluid bg-dark text-light p-0" style={{"font-size":"0.8em","fontWeight":"bold"}}>
           <div className="row gx-0 d-none d-lg-flex">
             <div className="col-lg-7 px-4 text-start">
@@ -33,26 +33,31 @@ function Header() {
               </div>
             </div>
           </div>
-          <div className="container-fluid bg-white p-0">
-          <div className="row gx-0 d-none d-lg-flex">
-          <div className="col-lg-2">    
-          <a href="/" className="navbar-brand d-flex px-4 px-3">
-          <img src="assets/img/School/logo.png" className="d-block" style={{width:"75px"}} alt="..." />
-          </a>          
-          </div>
-          <div className="col-lg-10 px-20 ">      
-               <p className="fa fa-xl text-primary me-20 solid" style={{fontSize:"3.0em"}}>
-                <h4><u>St. Haris High School & Hajra Girls Jr. College</u></h4></p><br/>
+        </div>   
+      
+
+        <div className="container-fluid bg-white text-light p-0">
+          <div className="row gx-0  d-lg-flex shadow">
+            <div className="col-lg-2 mx-auto">
+            <a href="/" className="navbar-brand d-flex">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="assets/img/School/logo.png" className="d-block w-50 center" alt="logo" />
+             </a>
+            </div>
+            <div className="col-lg-10">
+            <p className="fa fa-xl text-primary me-20 solid" style={{fontSize:"2.0em"}}>
+                <h4><strong>St. Haris High School & Hajra Girls Jr. College</strong></h4></p><br/>
                 <p className="fa fa-marker-alt text-primary me-20 solid" style={{fontSize:"1.50em"}}>
-                <p>Success in this world and Akhirah</p></p>
-                
-              
-    </div>
-              </div>              
-              <div className="col-lg shadow-lg">&nbsp;
+                <p style={{fontSize:"1.0em"}}>Success in this world and Akhirah</p></p>
+            </div>
+          </div>
+          </div>     
+          <div className="row">         
+              <div className="col shadow-lg">&nbsp;
               </div>              
               </div>
-        </div>        
+        </div>       
+                 
   )
 }
 

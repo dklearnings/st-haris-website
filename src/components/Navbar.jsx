@@ -5,7 +5,7 @@ function Navbar() {
     <div>  {/* Navbar Start */}
       <nav className="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
         <div className="collapse navbar-collapse" id="navbarCollapse">
-          <div className="navbar-nav ms-auto p-4 p-lg-0">
+          <div className="navbar-nav ms-auto p-2 p-lg-0">
             <a href="/" className="nav-item nav-link">Home</a> 
             <div className="nav-item dropdown">
               <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">About Us</a>

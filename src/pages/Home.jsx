@@ -72,79 +72,84 @@ function Home() {
     <Thoughts />      
 <div className="container">
   <div className="row">
-    <div className="col">
+    <div className="col" style={{"width": "18em","height":"0.5em"}}>
      {/*Notice Board start */}
-        <div className="card" style={{width: '18rem'}}>
+        <div className="card" style={{"width": "18em","height":"18em"}}>
         <div className="btn btn-primary">
           Notice Board
         </div>
         <Marquee
-  fade={true}
-  direction={"up"}
-  reverse={false}
-  pauseOnHover={true}  
-  className=""
->
+          fade={true}
+          direction={"up"}
+          reverse={false}
+          pauseOnHover={true}  
+          className=""
+        >
         <div className="list-group">        
-        {notices.map(notice => (                  
-  <a href="/notices" className="list-group-item list-group-item-action"> 
-  <small className="fa fa-bell text-primary" /> &nbsp;
-         {notice.title}
-         </a>))}</div> </Marquee>
-  <a href="/notices" className="btn btn-primary">View All</a>  
+          {notices.map(notice => (                  
+          <a href="/notices" className="list-group-item list-group-item-action"> 
+            <small className="fa fa-bell text-primary" />&nbsp;
+            {notice.title}
+          </a>))}
+        </div> 
+        </Marquee>
+        <a href="/notices" className="btn btn-primary">View All</a>  
       </div>     
      {/*Notice Board end */}
     </div>   
-    <div className="col">
+    <div className="col" style={{"width": "18rem","height":"18rem"}}>
     {/*Director start */}
-      <div className="container align-top" style={{width: '18rem'}}>
-  <div className="card">
-    <img src="assets/img/Trustee/md.jpg " className="top-0 start-0 pe-0 pb-0" alt="..." />
-    <div className="card-body" style={{height: '3rem'}}>      
-      <p className="card-text fw-bold text-center text-uppercase">Mr. Khalid Khan, MD</p> 
+      <div className="card" style={{"width": "18em","height":"18em"}}> 
+        <img src="assets/img/Trustee/md.jpg" className="top-0 start-0 pe-0 pb-0" alt="Photo of MD" />
+        <div className="card-body w-7">      
+          <p className="card-text fw-bold text-center text-uppercase">Mr. Khalid Khan</p>
+          <p className="card-text text-center">Managing Director</p> 
+          </div>
       </div>
-  </div>
-  {/*Director ends */}
-</div>
+    {/*Director ends */}
     </div>
-    <div className="col">
-    {/*Achievements start */}
-       <div className="card" style={{width: '18rem'}}>
-        <div className="btn btn-primary">
-          Achievements
+
+    <div className="col" style={{"width": "18rem","height":"18rem"}}>
+      {/*Achievements start */}
+        <div className="card" style={{"width": "18em","height":"18em"}}>
+          <div className="btn btn-primary">
+            Achievements
+          </div>
+          <Achievements />
         </div>
-        <Achievements />
-      </div>
       {/*Achievements ends */}
     </div>    
   </div>
 
   <div className="row">
-    <div className="col">
-    {/*Important Links start */}
-     <div className="card" style={{width: '18rem'}}>
+    <div className="col" style={{"width": "18em","height":"18em"}}>
+     {/*Important Links start */}
+     <div className="card" style={{"width": "18em","height":"18em"}}>
         <div className="btn btn-primary">
           Important Links
         </div>
-        <div className="list-group">
+        
          <Marquee
-  fade={false}
-  direction={"up"}
-  reverse={false}
-  pauseOnHover={true}  
->
+          fade={false}
+          direction={"up"}
+          reverse={false}
+          pauseOnHover={true}>
+          <div className="list-group">
         {links.map(link => (        
-  <a href="/links" className="list-group-item list-group-item-action"> 
-  <small className="fa fa-link text-primary" /> &nbsp;
-         {link.title}
-         </a>))}</Marquee></div>     
-  <a href="/links" className="btn btn-primary">View All</a>  
+          <a href="/links" className="list-group-item list-group-item-action"> 
+            <small className="fa fa-link text-primary" /> &nbsp;
+            {link.title}
+          </a>))}
+          </div>
+          </Marquee>
+             
+          <a href="/links" className="btn btn-primary">View All</a>  
       </div>   
-     {/*Important Links end */}
+    {/*Important Links end */}
     </div>   
-    <div className="col">
+    <div className="col" style={{"width": "18em","height":"18em"}}>
     {/*Activities start */}
-      <div className="card" style={{width: '18rem'}}>
+      <div className="card"  style={{"width": "18em","height":"18em"}}>
         <div className="btn btn-primary">
           Activities
         </div>
@@ -152,30 +157,33 @@ function Home() {
       </div>
       {/*Activities end */}
     </div>
-    <div className="col">
+    <div className="col" style={{"width": "18em","height":"18em"}}>
     {/*Newsletter start */}
-        <div className="card" style={{width: '18rem'}}>
+        <div className="card" style={{"width": "18em","height":"18em"}}>
         <div className="btn btn-primary">
           News Letter
         </div>
-        <div className="list-group">
+        
          <Marquee
   fade={false}
   direction={"up"}
   reverse={false}
   pauseOnHover={true}  
 >
+<div className="list-group">
         {newsletters.map(newsletter => (        
           <a href="/newsletters" className="list-group-item list-group-item-action">
           <small className="fa fa-newspaper text-primary" /> &nbsp; 
          {newsletter.title}</a>))}
+         </div> 
          </Marquee>
-         </div>     
+             
          <a href="/newsletters" className="btn btn-primary">View All</a>
       </div>
       </div>
        {/*Newsletter end */}
-    </div>    
+    </div>   
+   
   
 
  

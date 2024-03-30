@@ -40,11 +40,11 @@ function Thoughts() {
     
   <div className="container-fluid bg-dark text-light p-0">
    <div className="row">
-      <div className="col-2 me-0 w-0 text-md-right">
+      <div className="col-2 me-0 w-0 text-center">
      {/* start */}
      &nbsp;&nbsp;
                 <small className="fa fa-book text-primary" />
-                <small className="fa text-primary me-2 w-5">&nbsp;&nbsp;Thought of the day</small>
+                <small className="fa text-primary text-center me-2 w-5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thought of the day</small>
       
       {/* end */}
      </div> 
