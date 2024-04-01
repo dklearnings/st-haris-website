@@ -2,7 +2,7 @@ import React from 'react'
 import About from './pages/About'
 import Home from './pages/Home'
 import Contact from './pages/Contact'
-import { BrowserRouter , Routes, Route } from 'react-router-dom'
+import { HashRouter as Router , Routes, Route } from 'react-router-dom'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import Navbar from './components/Navbar'
@@ -34,7 +34,7 @@ import Activities from './pages/Activities'
 
 function App() {
   return (    
-    <BrowserRouter basename="/st-haris-website">
+    <Router>
     <Header/><Navbar/>
     {/*<Carousal/>
     <Facts/>*/}
@@ -71,7 +71,7 @@ function App() {
 
     </Routes>    
     <Footer/>
-    </BrowserRouter> 
+    </Router> 
      
   )
 }
