@@ -99,7 +99,7 @@ function Home() {
     </div>   
     <div className="col" style={{"width": "18rem","height":"18rem"}}>
     {/*Director start */}
-      <div className="card" style={{"width": "18em","height":"18em"}}> 
+      <div className="card" style={{"width": "18em"}}> 
         <img src="assets/img/Trustee/md.jpg" className="top-0 start-0 pe-0 pb-0" alt="Photo of MD" />
         <div className="card-body w-7">      
           <p className="card-text fw-bold text-center text-uppercase">Mr. Khalid Khan</p>

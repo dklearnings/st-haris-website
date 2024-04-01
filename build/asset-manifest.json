@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/st-haris-website/static/css/main.e6c13ad2.css",
-    "main.js": "/st-haris-website/static/js/main.539c6daf.js",
-    "index.html": "/st-haris-website/index.html",
-    "main.e6c13ad2.css.map": "/st-haris-website/static/css/main.e6c13ad2.css.map",
-    "main.539c6daf.js.map": "/st-haris-website/static/js/main.539c6daf.js.map"
+    "main.css": "/stharis_website/static/css/main.773038ad.css",
+    "main.js": "/stharis_website/static/js/main.4ab6d6c7.js",
+    "index.html": "/stharis_website/index.html",
+    "main.773038ad.css.map": "/stharis_website/static/css/main.773038ad.css.map",
+    "main.4ab6d6c7.js.map": "/stharis_website/static/js/main.4ab6d6c7.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.539c6daf.js"
+    "static/css/main.773038ad.css",
+    "static/js/main.4ab6d6c7.js"
   ]
 }

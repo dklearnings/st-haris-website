@@ -34,7 +34,7 @@ import Activities from './pages/Activities'
 
 function App() {
   return (    
-    <BrowserRouter>
+    <BrowserRouter basename="/st-haris-website">
     <Header/><Navbar/>
     {/*<Carousal/>
     <Facts/>*/}
