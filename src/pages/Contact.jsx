@@ -20,7 +20,7 @@ function Contact() {
               <h6 className="text-primary mb-4"><i className="fa fa-car text-white me-2" />St.Haris High School & Hajra Girls Jr. College</h6>
                 <p className="mb-2"><i className="fa fa-map-marker-alt me-3" />Behind Al-Shams Mosque, near Ring Banquet Hall, Naya Nagar, Mira Road(E), Thane-401107, India</p>
                 <p className="mb-2"><i className="fa fa-phone-alt me-3" />+022-28105376 / 8879016151</p>
-                <p className="mb-2"><i className="fa fa-envelope me-3" />info@example.com</p>
+                <p className="mb-2"><i className="fa fa-envelope me-3" />stharishighschool@gmail.com</p>
               
               <form>
                 <div className="row g-3">

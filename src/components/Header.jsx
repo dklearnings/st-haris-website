@@ -27,9 +27,9 @@ function Header() {
               </div>
               <div className="h-100 d-inline-flex align-items-center me-2 mx-n2">
                 <a target="_blank" className="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href="https://www.facebook.com/profile.php?id=100085786775850"><i className="fab fa-facebook-f" /></a>
-                <a target="_blank" className="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href><i className="fab fa-telegram" /></a>
+                <a target="_blank" className="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href="https://t.me/Stharis"><i className="fab fa-telegram" /></a>
                 <a target="_blank" className="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href="https://www.youtube.com/user/stharishighschool"><i className="fab fa-youtube" /></a>
-                <a target="_blank" className="btn btn-square btn-link rounded-0" href="https://www.instagram.com/stharishighschool/"><i className="fab fa-instagram" /></a>
+                <a target="_blank" className="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href="https://www.instagram.com/stharishighschool/"><i className="fab fa-instagram" /></a>
               </div>
             </div>
           </div>
