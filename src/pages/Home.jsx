@@ -4,10 +4,9 @@ import Carousal from '../components/Carousal'
 import Thoughts from './Thoughts'
 import Activities from './Activities';
 import Achievements from './Achievements';
-//import ViewCount from './ViewCount';
-//import Marquee from "react-fast-marquee";
 import { Marquee } from "@devnomic/marquee";
 import "@devnomic/marquee/dist/index.css";
+//import nf from Intl.NumberFormat;
 
 
 function Home() {
@@ -22,7 +21,9 @@ function Home() {
         const initialCount = Number(storedCount)||0;
         //const initialCount = 0;
         
-        //nf.format(initialCount);
+        //nf.format(Math.floor(initialCount));
+
+        //Math.floor
         setCount(initialCount+0.5);
         localStorage.setItem("pageVisits",initialCount+0.5);
 
@@ -53,7 +54,6 @@ function Home() {
     }
   )
 
-  
   //links List Fetch Function   
   fetch("./assets/data/links/link_list.json").then(
     function(res){
@@ -70,11 +70,11 @@ function Home() {
   return (
     <div><Carousal />
     <Thoughts />      
-<div className="container">
-  <div className="row">
-    <div className="col" style={{"width": "18em","height":"0.5em"}}>
+<div className="container-fluid">
+  <div className="row" style={{"height":"452px"}}>
+    <div className="col col-sm-4" style={{"height":"452px"}}>
      {/*Notice Board start */}
-        <div className="card" style={{"width": "18em","height":"18em"}}>
+        <div className="card">
         <div className="btn btn-primary">
           Notice Board
         </div>
@@ -97,11 +97,11 @@ function Home() {
       </div>     
      {/*Notice Board end */}
     </div>   
-    <div className="col" style={{"width": "18rem","height":"18rem"}}>
+    <div className="col col-sm-4">
     {/*Director start */}
-      <div className="card" style={{"width": "18em"}}> 
-        <img src="assets/img/Trustee/md.jpg" className="top-0 start-0 pe-0 pb-0" alt="Photo of MD" />
-        <div className="card-body w-7">      
+      <div className="card"> 
+        <img src="assets/img/Trustee/md.jpg" className="top-0 start=0 pe-0 pb-0" alt="Photo of MD" />
+        <div className="card-body">      
           <p className="card-text fw-bold text-center text-uppercase">Mr. Khalid Khan</p>
           <p className="card-text text-center">Managing Director</p> 
           </div>
@@ -109,9 +109,9 @@ function Home() {
     {/*Director ends */}
     </div>
 
-    <div className="col" style={{"width": "18rem","height":"18rem"}}>
+    <div className="col col-sm-4">
       {/*Achievements start */}
-        <div className="card" style={{"width": "18em","height":"18em"}}>
+        <div className="card">
           <div className="btn btn-primary">
             Achievements
           </div>
@@ -122,9 +122,9 @@ function Home() {
   </div>
 
   <div className="row">
-    <div className="col" style={{"width": "18em","height":"18em"}}>
+    <div className="col col-sm-4">
      {/*Important Links start */}
-     <div className="card" style={{"width": "18em","height":"18em"}}>
+     <div className="card">
         <div className="btn btn-primary">
           Important Links
         </div>
@@ -147,9 +147,9 @@ function Home() {
       </div>   
     {/*Important Links end */}
     </div>   
-    <div className="col" style={{"width": "18em","height":"18em"}}>
+    <div className="col cpl-sm-4">
     {/*Activities start */}
-      <div className="card"  style={{"width": "18em","height":"18em"}}>
+      <div className="card">
         <div className="btn btn-primary">
           Activities
         </div>
@@ -157,9 +157,9 @@ function Home() {
       </div>
       {/*Activities end */}
     </div>
-    <div className="col" style={{"width": "18em","height":"18em"}}>
+    <div className="col col-sm-4">
     {/*Newsletter start */}
-        <div className="card" style={{"width": "18em","height":"18em"}}>
+        <div className="card">
         <div className="btn btn-primary">
           News Letter
         </div>
@@ -188,7 +188,7 @@ function Home() {
 
  
 </div>
-<div className="container-fluid bg-dark text-light p-0">
+<div className="container-fluid copyright text-light p-0">
    <div className="row">
       <div className="col">
      {/* View Count start */}

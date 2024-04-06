@@ -18,21 +18,31 @@ function Notices() {
   )
 
   return (
-    
-    <div className="overflow-visible">  
+       <div className="container-fluid">
+       <div className="container-fluid text-light p-0">
+        <h2>NOTICE BOARD</h2>
+        </div>
+        <br />
+        <div className="card-deck">
     {notices.map(notice => (
-            <div className="row">
-  <div className="col-sm-6 mb-3 mb-sm-0">
-    <div className="card">
+            <div className="row justify-content-center">
+  <div className="col col-md-8 h-auto">
+    <div className="card shadow p-3 mb-5 bg-body rounded">
       <div className="card-body">
-      <p className="card-text">{notice.title}</p>
-      <p className="card-text">{notice.desc}</p>
-        <h6 className="card-title">{notice.publishdate}</h6>        
+      <h5 className="card-title text-center">{notice.title}<hr /></h5>
+                    <p className="card-text  text-left">{notice.desc}</p>
+                <div className="card-footer">
+                    <small className="text-muted">Date: {notice.publishdate}</small>
+                </div>      
+                
       </div>
     </div>
+    
   </div>
   </div>
+  
   ))}</div>
+  </div>
   )
 
 }

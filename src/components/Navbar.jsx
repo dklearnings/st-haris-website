@@ -10,13 +10,13 @@ function Navbar() {
             <div className="nav-item dropdown">
               <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">About Us</a>
               <div className="dropdown-menu bg-light m-0">
-                <a href="/trustee" className="dropdown-item">Managing Trustee</a>
-                <a href="/belief" className="dropdown-item">Our Belief</a>
-                <a href="/aimsandideals" className="dropdown-item">Aims and Ideals</a>
-                <a href="/vision" className="dropdown-item">Our Vision</a>
-                <a href="/mission" className="dropdown-item">Our Mission</a>
-                <a href="/goals" className="dropdown-item">Goals</a>
-                <a href="/objectives" className="dropdown-item">Objectives</a>
+                <a href="/trustee" className="dropdown-item">Managing Trustee</a><hr/>
+                <a href="/belief" className="dropdown-item">Our Belief</a><hr/>
+                <a href="/aimsandideals" className="dropdown-item">Aims and Ideals</a><hr/>
+                <a href="/vision" className="dropdown-item">Our Vision</a><hr/>
+                <a href="/mission" className="dropdown-item">Our Mission</a><hr/>
+                <a href="/goals" className="dropdown-item">Goals</a><hr/>
+                <a href="/objectives" className="dropdown-item">Objectives</a><hr/>
                 <a href="/motto" className="dropdown-item">Our Motto</a>
                 {/* <a href="404.html" className="dropdown-item">404 Page</a> */}
               </div>
@@ -26,22 +26,22 @@ function Navbar() {
             <div className="nav-item dropdown">
               <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Instructions</a>
               <div className="dropdown-menu bg-light m-0">
-                <a href="/instruction" className="dropdown-item">General Instructions</a>
-                <a href="/ruleandregulations" className="dropdown-item">Rule and Regulations</a>
-                <a href="/examination" className="dropdown-item">Examinations</a>
-                <a href="/cocurricularactivities" className="dropdown-item">Co-Curricular Activities</a>
-                <a href="/houses" className="dropdown-item">Houses</a>
-                <a href="/uniforms" className="dropdown-item">Uniforms</a>
-                <a href="/idcards" className="dropdown-item">ID Cards</a>
-                <a href="/busservices" className="dropdown-item">Bus Services</a>                
+                <a href="/instruction" className="dropdown-item">General Instructions</a><hr/>
+                <a href="/ruleandregulations" className="dropdown-item">Rule and Regulations</a><hr/>
+                <a href="/examination" className="dropdown-item">Examinations</a><hr/>
+                <a href="/cocurricularactivities" className="dropdown-item">Co-Curricular Activities</a><hr/>
+                <a href="/houses" className="dropdown-item">Houses</a><hr/>
+                <a href="/uniforms" className="dropdown-item">Uniforms</a><hr/>
+                <a href="/idcards" className="dropdown-item">ID Cards</a><hr/>
+                <a href="/busservices" className="dropdown-item">Bus Services</a>            
               </div>
             </div>
 
             <div className="nav-item dropdown">
               <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Online Admission</a>
               <div className="dropdown-menu bg-light m-0">
-                <a href="https://stharis-eschool.in/ONLINEADMISSION/INSTRUCTIONS_ONLINEADM.ASPX" target="_blank" className="dropdown-item">Nursery to Sr. K.G. Admission</a>
-                <a href="https://stharis-eschool.in/OnlineAdmission/OnlineEnquiryForm.aspx" target="_blank" className="dropdown-item">College Admission</a>
+                <a href="https://stharis-eschool.in/ONLINEADMISSION/INSTRUCTIONS_ONLINEADM.ASPX" target="_blank" className="dropdown-item">Nursery to Sr. K.G. Admission</a><hr/>
+                <a href="https://stharis-eschool.in/OnlineAdmission/OnlineEnquiryForm.aspx" target="_blank" className="dropdown-item">College Admission</a><hr/>
                 <a href="/enquiry" className="dropdown-item">Enquiry for Other Classes</a>                
               </div>
             </div>

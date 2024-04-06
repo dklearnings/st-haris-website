@@ -22,7 +22,9 @@ function Carousal() {
   }, []);
 
   return (
-    <div className="md-30"> 
+    <div className="row justify-content-center"> 
+    <div className="col col-md-10">
+  
     {/* Carousel Start */}
       <Carousel data-bs-theme="light" smooth>
       {carousalist.map(carousal => (
@@ -35,6 +37,7 @@ function Carousal() {
       </Carousel.Item>
 ))}
       </Carousel>
+      </div>
     {/* Carousel End */}
    </div>
   )
