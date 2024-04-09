@@ -48,8 +48,9 @@
 
 .btn.btn-primary,
 .btn.btn-outline-primary:hover {
-    color: #FFFFFF;
+    color: #0C2B4B;
 }
+
 
 .btn-square {
     width: 38px;
@@ -91,7 +92,7 @@
 .navbar .navbar-nav .nav-link {
     margin-right: 30px;
     padding: 25px 0;
-    color: var(--dark);
+    color: var(--light);
     font-weight: 500;
     text-transform: uppercase;
     outline: none;

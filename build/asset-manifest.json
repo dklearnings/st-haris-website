@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/stharis_website/static/css/main.773038ad.css",
-    "main.js": "/stharis_website/static/js/main.d6765959.js",
-    "index.html": "/stharis_website/index.html",
-    "main.773038ad.css.map": "/stharis_website/static/css/main.773038ad.css.map",
-    "main.d6765959.js.map": "/stharis_website/static/js/main.d6765959.js.map"
+    "main.css": "/static/css/main.773038ad.css",
+    "main.js": "/static/js/main.e117ee55.js",
+    "index.html": "/index.html",
+    "main.773038ad.css.map": "/static/css/main.773038ad.css.map",
+    "main.e117ee55.js.map": "/static/js/main.e117ee55.js.map"
   },
   "entrypoints": [
     "static/css/main.773038ad.css",
-    "static/js/main.d6765959.js"
+    "static/js/main.e117ee55.js"
   ]
 }
