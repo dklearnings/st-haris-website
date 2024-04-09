@@ -72,7 +72,7 @@ function Home() {
     <Thoughts />      
 <div className="container-fluid">
   <div className="row" style={{"height":"452px"}}>
-    <div className="col col-sm-4" style={{"height":"452px"}}>
+    <div className="col col-sm-4 col-lg-4 col-md-4" style={{"height":"452px"}}>
      {/*Notice Board start */}
         <div className="card">
         <div className="btn btn-primary">
@@ -97,7 +97,7 @@ function Home() {
       </div>     
      {/*Notice Board end */}
     </div>   
-    <div className="col col-sm-4">
+    <div className="col col-sm-4 col-lg-4 col-md-4">
     {/*Director start */}
       <div className="card"> 
         <img src="assets/img/Trustee/md.jpg" className="top-0 start=0 pe-0 pb-0" alt="Photo of MD" />
@@ -109,7 +109,7 @@ function Home() {
     {/*Director ends */}
     </div>
 
-    <div className="col col-sm-4">
+    <div className="col col-sm-4 col-lg-4 col-md-4">
       {/*Achievements start */}
         <div className="card">
           <div className="btn btn-primary">
@@ -122,7 +122,7 @@ function Home() {
   </div>
 
   <div className="row">
-    <div className="col col-sm-4">
+    <div className="col col-sm-4 col-lg-4 col-md-4">
      {/*Important Links start */}
      <div className="card">
         <div className="btn btn-primary">
@@ -147,7 +147,7 @@ function Home() {
       </div>   
     {/*Important Links end */}
     </div>   
-    <div className="col cpl-sm-4">
+    <div className="col cpl-sm-4 col-lg-4 col-md-4">
     {/*Activities start */}
       <div className="card">
         <div className="btn btn-primary">

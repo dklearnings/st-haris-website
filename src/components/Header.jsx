@@ -38,13 +38,12 @@ function Header() {
 
         <div className="container-fluid bg-white text-light p-0">
           <div className="row gx-0  d-lg-flex shadow">
-           <div className="col-lg-2 mx-auto">
-            <a href="/" className="navbar-brand d-flex">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <img src="assets/img/School/logo.png" className="d-block w-50 center" alt="logo" />
+           <div className="col-sm-1 col-lg-1 col-md-1">
+            <a href="/" className="navbar-brand d-flex">
+            <img src="/assets/img/School/logo.png" width="300" height="300" className="img-responsive" alt="logo" />
              </a>
             </div> 
-             <div className="col-lg-10">
+             <div className="col-sm-9 col-lg-9 col-md-9">
             <p className="fa fa-xl text-primary me-20 text-uppercase font-weight-bold" style={{fontSize:"2.0em"}}>
                 <h4><b>St. Haris High School & Hajra Girls Jr. College</b></h4></p><br/>
                 <p className="fa fa-marker-alt text-primary me-20" style={{fontSize:"1.50em"}}>
