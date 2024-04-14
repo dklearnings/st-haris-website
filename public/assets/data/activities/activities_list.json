@@ -1,0 +1,6 @@
+[{ "id": 1,"title":"Activity 1","year":"2024-2025","publishdate":"2024-01-05", "url": "./assets/img/Activities/1.jpg" },
+ { "id": 2,"title":"Activity 2","year":"2023-2024","publishdate":"2024-01-05", "url": "./assets/img/Activities/2.jpg" },
+ { "id": 3,"title":"Activity 3","year":"2023-2024","publishdate":"2024-01-05", "url": "./assets/img/Activities/3.jpg" }, 
+ { "id": 4,"title":"Activity 4","year":"2023-2024","publishdate":"2024-01-05", "url": "./assets/img/Activities/4.jpg" },
+ { "id": 5,"title":"Activity 5","year":"2023-2024","publishdate":"2024-01-05", "url": "./assets/img/Activities/5.jpg" }    
+]    

@@ -31,6 +31,7 @@ import IdCards from './pages/IdCards'
 import BusServices from './pages/BusServices'
 import Links from './pages/Links'
 import Activities from './pages/Activities'
+import AchievementDetails from './pages/AchievementDetails'
 
 function App() {
   return (    
@@ -52,6 +53,7 @@ function App() {
     <Route path='/links' element={<Links/>}></Route>
     <Route path='/newsletters' element={<NewsLetters/>}></Route>
     <Route path='/activities' element={<Activities/>}></Route>
+    <Route path='/achievementdetails' element={<AchievementDetails/>}></Route>
 
     <Route path='/ruleandregulations' element={<RuleAndRegulations/>}></Route>
     <Route path='/examination' element={<Examination/>}></Route>

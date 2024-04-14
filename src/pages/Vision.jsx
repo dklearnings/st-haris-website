@@ -13,10 +13,11 @@ function Vision() {
               </div>
             </div>
             <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-              <div className="h-100"> 
-                <h6 className="text-primary text-uppercase mb-2">Our Vision</h6>                
+              <div className="h-100"> <div className="btn-dark text-center" >
+              Our Vision</div>
+                
                 <p className="mb-4"> 
-                   "   The Vision of St Haris High School is to enlighten the lives of the young generation with the highest quality education. An education that is in tandem with Islamic values and morals, which can illuminate their mind, body and soul with the richness of Imaan, making them good practicing Muslims beneficial to the society and mankind." <br>
+                   "The Vision of St Haris High School is to enlighten the lives of the young generation with the highest quality education. An education that is in tandem with Islamic values and morals, which can illuminate their mind, body and soul with the richness of Imaan, making them good practicing Muslims beneficial to the society and mankind." <br>
                 </br>
                 </p>
               </div>

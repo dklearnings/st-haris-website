@@ -1,15 +1,46 @@
 import React from 'react'
+import { useState } from 'react';
 
 function Navbar() {
+const [loa, setLOA] = useState([]);
+const [topper, setTopper] = useState([]);
+  // Alumni List Fetch Function   
+  fetch("/assets/data/alumni/loa.json").then(
+    function(res){
+    return res.json()
+  }).then(function(loa){
+  // store loa in State File Variable
+    setLOA(loa)
+  }).catch(
+    function(err){
+      console.log(err, ' error on fetching loa ')
+    }
+  )
+
+  // Alumni List Fetch Function   
+  fetch("/assets/data/toppers/topper.json").then(
+    function(res){
+    return res.json()
+  }).then(function(topper){
+  // store topper in State File Variable
+    setTopper(topper)
+  }).catch(
+    function(err){
+      console.log(err, ' error on fetching topper ')
+    }
+  )
+
+
   return (
     <div>  {/* Navbar Start */}
-      <nav className="navbar navbar-expand-lg bg-dark navbar-light sticky-top p-0">
-      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-    <span className="navbar-toggler-icon"></span>
-  </button>
-        <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
-          <div className="navbar-nav mx-auto p-2 p-lg-0">
-          <a href="/" className="nav-item nav-link">Home</a> 
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <div className="navbar-nav mx-auto p-2 p-lg-0">
+        <a href="/" className="nav-item nav-link">Home</a> 
             <div className="nav-item dropdown">
               <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">About Us</a>
               <div className="dropdown-menu bg-light m-0">
@@ -48,12 +79,33 @@ function Navbar() {
                 <a href="/enquiry" className="dropdown-item">Enquiry for Other Classes</a>                
               </div>
             </div>
+            <div className="nav-item dropdown">
+             <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Alumni</a>             
+             <div className="dropdown-menu bg-light m-0">
+              <div>{loa.map(al => (
+                <a href={al.url} className="dropdown-item" target="_blank"
+                    rel="noreferrer">List of Alumni
+                </a> 
+                     ))}  
+              </div>                
+                    <hr/>
+                <div>{topper.map(t => (
+                <a href={t.url}  className="dropdown-item" target="_blank" 
+                    rel="noreferrer">School Toppers</a>
+                ))}  </div> 
+                <hr/>
+                <a href="https://forms.gle/LA1RPMhw6K45wz9i8" target="_blank" className="dropdown-item">Alumni Registration</a><hr/>
+              </div>
+             
+            </div>
             <a href="/contact" className="nav-item nav-link">Contact</a>
              <a href="/downloads" className="nav-item nav-link">Downloads</a>
-          </div>
-         {/* <a href className="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Get Started<i className="fa fa-arrow-right ms-3" /></a> */}
-        </div>
-      </nav>
+          
+      
+    </div>
+  </div>
+  </div>
+</nav>
       {/* Navbar End */}
       </div>
   )

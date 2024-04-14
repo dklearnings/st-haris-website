@@ -67,27 +67,29 @@ function Downloads() {
   <div className="btn-group">
     <div className="col-sm-12" role="toolbar" aria-label="Select the session">
   <div className="btn-group" role="group" aria-label="First group">
-    <button type="button" className="btn" onClick={()=>handleFilter(filterList.year)}>{filterList.year}</button>    
+    <button type="button" className="btn btn-primary mb-2" onClick={()=>handleFilter(filterList.year)}>{filterList.year}</button>    
   </div>
   </div>
   </div>
    ))}
+<br />
+  <div className="container">
 
 <div className="overflow-visible">  
     {files.map(file => (
-            <div class="row">
-  <div class="col-sm-6 mb-3 mb-sm-0">
-    <div class="card">
-      <div class="card-body">
-      <p class="card-text">{file.title}</p>
-        <h5 class="card-title">{file.publishdate}</h5>
-        <button href="" onClick={()=>handleDownload(file.url)}>Download</button>
+  <div className="row g-4">
+  <div className="col col-md-2 mb-2">
+    <div className="card text-center border-dark shadow">
+    <p className="card-title text-center">{file.title}</p><hr />
+      <div className="card-body">        
+        <small className="card-subtitle">Date: {file.publishdate}</small><br />
+        <button className="btn btn-primary text-center" onClick={()=>handleDownload(file.url)}>Download</button>
       </div>
     </div>
   </div>
   </div>
           ))}
- 
+ </div>
 </div>
     </div>
   )

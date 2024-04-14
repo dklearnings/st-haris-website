@@ -18,10 +18,7 @@ function Notices() {
   )
 
   return (
-       <div className="container-fluid">
-       <div className="container-fluid text-light p-0">
-        <h2>NOTICE BOARD</h2>
-        </div>
+       <div className="container-fluid">       
         <br />
         <div className="card-deck">
     {notices.map(notice => (

@@ -13,8 +13,8 @@ function Instruction() {
                 <img className="position-absolute top-0 start-0 bg-white pe-3 pb-3" src="assets/img/about-2.jpg" alt="" style={{width: '200px', height: '200px'}} />
               </div> */}
                <div className="position-relative overflow-hidden ps-5 pt-5 h-100" style={{minHeight: '400px'}}>
-                 <img className="position-absolute w-100 h-100" src="assets/img/Instruction/checklist.jpg" alt="" style={{objectFit: 'cover'}} /> 
-                <img className="position-absolute top-0 start-0 bg-white pe-3 pb-3" src="assets/img/Instruction/book-composition-with-open-book.jpg" alt="" style={{width: '200px', height: '200px'}} />
+                 <img className="position-absolute w-100 h-100" src="assets/img/Instruction/checklist.png" alt="" style={{objectFit: 'cover'}} /> 
+                <img className="position-absolute top-0 start-0 bg-white pe-3 pb-3" src="assets/img/Instruction/book-composition-with-open-book.png" alt="" style={{width: '200px', height: '200px'}} />
               </div> 
             </div>
             <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">

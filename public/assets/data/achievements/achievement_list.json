@@ -1,0 +1,6 @@
+[{ "id": 1,"title":"Achievement 1","year":"2024-2025","publishdate":"2024-01-05", "url": "./assets/img/Achievements/1.jpg" },
+ { "id": 2,"title":"Achievement 2","year":"2023-2024","publishdate":"2024-01-05", "url": "./assets/img/Achievements/2.jpg" },
+ { "id": 3,"title":"Achievement 3","year":"2023-2024","publishdate":"2024-01-05", "url": "./assets/img/Achievements/3.jpg" }, 
+ { "id": 4,"title":"Achievement 4","year":"2023-2024","publishdate":"2024-01-05", "url": "./assets/img/Achievements/4.jpg" },
+ { "id": 5,"title":"Achievement 5","year":"2023-2024","publishdate":"2024-01-05", "url": "./assets/img/Achievements/5.jpg" }    
+]    

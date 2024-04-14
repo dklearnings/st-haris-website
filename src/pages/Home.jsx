@@ -14,6 +14,8 @@ function Home() {
   const [links, setLinks] = useState([]);
   const [newsletters, setNewsletters] = useState([]);
   const [count, setCount]=useState(0);
+  const [activities, setActivities] = useState([]);
+  
 
    useEffect(()=>{
         //var nf = new Intl.NumberFormat();
@@ -54,6 +56,19 @@ function Home() {
     }
   )
 
+  // Activities List Fetch Function   
+  fetch("./assets/data/newsletters/newsletter_list.json").then(
+    function(res){
+    return res.json()
+  }).then(function(activities){
+  // store activities in State File Variable
+    setActivities(activities)
+  }).catch(
+    function(err){
+      console.log(err, ' error on fetching activities ')
+    }
+  )
+
   //links List Fetch Function   
   fetch("./assets/data/links/link_list.json").then(
     function(res){
@@ -74,7 +89,7 @@ function Home() {
   <div className="row" style={{"height":"452px"}}>
     <div className="col col-sm-4 col-lg-4 col-md-4" style={{"height":"452px"}}>
      {/*Notice Board start */}
-        <div className="card">
+        <div className="card" style={{"height":"452px"}}>
         <div className="btn btn-primary">
           Notice Board
         </div>
@@ -109,22 +124,23 @@ function Home() {
     {/*Director ends */}
     </div>
 
-    <div className="col col-sm-4 col-lg-4 col-md-4">
+    <div className="col col-sm-4 col-lg-4 col-md-4" style={{"height":"452px"}}>
       {/*Achievements start */}
         <div className="card">
-          <div className="btn btn-primary">
-            Achievements
-          </div>
+        <div className="btn btn-primary">
+          Achievements
+        </div>
           <Achievements />
         </div>
       {/*Achievements ends */}
     </div>    
   </div>
 
-  <div className="row">
-    <div className="col col-sm-4 col-lg-4 col-md-4">
+
+  <div className="row" style={{"height":"505px"}}>
+    <div className="col col-sm-4 col-lg-4 col-md-4" style={{"height":"505px"}}>
      {/*Important Links start */}
-     <div className="card">
+           <div className="card" style={{"height":"505px"}}>
         <div className="btn btn-primary">
           Important Links
         </div>
@@ -135,19 +151,21 @@ function Home() {
           reverse={false}
           pauseOnHover={true}>
           <div className="list-group">
-        {links.map(link => (        
-          <a href="/links" className="list-group-item list-group-item-action"> 
-            <small className="fa fa-link text-primary" /> &nbsp;
-            {link.title}
-          </a>))}
+            {links.map(link => (        
+             <a href="/links" className="list-group-item list-group-item-action"> 
+             <small className="fa fa-link text-primary" /> &nbsp;
+             {link.title}
+             </a>))}
           </div>
-          </Marquee>
-             
+          </Marquee>             
           <a href="/links" className="btn btn-primary">View All</a>  
       </div>   
     {/*Important Links end */}
-    </div>   
-    <div className="col cpl-sm-4 col-lg-4 col-md-4">
+    </div> 
+ 
+    
+
+    <div className="col col-sm-4 col-lg-4 col-md-4" style={{"height":"505px"}}>
     {/*Activities start */}
       <div className="card">
         <div className="btn btn-primary">
@@ -157,9 +175,9 @@ function Home() {
       </div>
       {/*Activities end */}
     </div>
-    <div className="col col-sm-4">
+    <div className="col col-sm-4 col-lg-4 col-md-4" style={{"height":"505px"}}>
     {/*Newsletter start */}
-        <div className="card">
+        <div className="card" style={{"height":"500px"}}>
         <div className="btn btn-primary">
           News Letter
         </div>
@@ -172,13 +190,15 @@ function Home() {
 >
 <div className="list-group">
         {newsletters.map(newsletter => (        
-          <a href="/newsletters" className="list-group-item list-group-item-action">
-          <small className="fa fa-newspaper text-primary" /> &nbsp; 
-         {newsletter.title}</a>))}
+          
+          <a href={newsletter.url_detail} target="_blank" className="list-group-item list-group-item-action"> 
+          <img src={newsletter.url_home} className="col col-sm-4 col-lg-4 col-md-4"/><small>{newsletter.title}</small>
+           </a>
+         ))}
          </div> 
          </Marquee>
              
-         <a href="/newsletters" className="btn btn-primary">View All</a>
+         {/* <a href="/newsletters" className="btn btn-primary">View All</a> */}
       </div>
       </div>
        {/*Newsletter end */}

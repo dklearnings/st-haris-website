@@ -1,6 +1,6 @@
-[{ "id": 1,"title":"News Letter 1","year":"2024-2025","publishdate":"2024-01-05", "desc": "Detail1"},
- { "id": 2,"title":"News Letter 2","year":"2023-2024","publishdate":"2024-01-05", "desc": "Detail2" },
- { "id": 3,"title":"News Letter 3","year":"2023-2024","publishdate":"2024-01-05", "desc": "Detail3" }, 
- { "id": 4,"title":"News Letter 4","year":"2023-2024","publishdate":"2024-01-05", "desc": "Detail4" },
- { "id": 5,"title":"News Letter 5","year":"2023-2024","publishdate":"2024-01-05", "desc": "Detail5" }    
+[{ "id": 1,"title":"News Letter 1","year":"2024-2025","publishdate":"2024-01-05", "url_home": "./assets/img/NewsLetter/home/1.jpg", "url_detail":"./assets/img/NewsLetter/detail/1.jpg" },
+ { "id": 2,"title":"News Letter 2","year":"2023-2024","publishdate":"2024-01-05", "url_home": "./assets/img/NewsLetter/home/2.jpg", "url_detail":"./assets/img/NewsLetter/detail/2.jpg" },
+ { "id": 3,"title":"News Letter 3","year":"2023-2024","publishdate":"2024-01-05", "url_home": "./assets/img/NewsLetter/home/3.jpg", "url_detail":"./assets/img/NewsLetter/detail/3.jpg" }, 
+ { "id": 4,"title":"News Letter 4","year":"2023-2024","publishdate":"2024-01-05", "url_home": "./assets/img/NewsLetter/home/4.jpg", "url_detail":"./assets/img/NewsLetter/detail/4.jpg" },
+ { "id": 5,"title":"News Letter 5","year":"2023-2024","publishdate":"2024-01-05", "url_home": "./assets/img/NewsLetter/home/5.jpg", "url_detail":"./assets/img/NewsLetter/detail/5.jpg" }    
 ]    

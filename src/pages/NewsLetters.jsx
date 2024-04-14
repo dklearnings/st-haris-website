@@ -18,10 +18,10 @@ function NewsLetters() {
 
   return (
     
-    <div className="overflow-visible">  
+    <div className="">  
     {newsletters.map(newsletter => (
             <div className="row">
-  <div className="col-sm-6 mb-3 mb-sm-0">
+  <div className="col col-sm-3 col-md-6 mb-3 mb-sm-0">
     <div className="card">
       <div className="card-body">
       <p className="card-text">{newsletter.title}</p>
